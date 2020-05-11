@@ -10,7 +10,7 @@ function chooseHTMLCode(kind){
             <div class="main">
                 <p>다음 단계로 진행하려면<br>KT 건물 주소판을 찾으십시오</p>
                 <p>이미지를 눌러 크게 볼 수 있습니다</p>
-                <a href="https://v4.map.naver.com/?mpx=8aa2271ed5ba15a49d897c01ae3348fe4632eda8267ae0f279363c0b7fe94df6e1009765c858dd67b34358f7aa3fb75e976400be5b005183e46d9e6b201e0d6d&searchCoord=6ad680cc90a6d0abb2eb452753fec33e4881e862e4e4a2eb08b0cc0e8510aef7&query=S1Qg6riN7KCV6riN7KCVIOuMgOy5mOygkA%3D%3D&menu=location&tab=1&lng=455f7c29d7d497ab95ce3965a0604516&mapMode=0&lat=34d8580516f8232954c39d588b0c560f&dlevel=13&enc=b64" target="_blank"><img src="EunMaMap.png" width="920" height="680" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+                <a href="http://naver.me/xGnMr8Ny" target="_blank"><img src="EunMaMap.png" width="920" height="680" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
             </div>
             `;
             makeHTMLCode();

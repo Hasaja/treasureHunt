@@ -1,8 +1,19 @@
 var contents = document.getElementById('contents');
 var htmlCode = ``;
-
-
+function makeHTMLCode(){
+    contents.innerHTML = htmlCode;
+}
 function chooseHTMLCode(kind){
+    if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))){
+        htmlCode = `
+        <div class="main">
+            <p>본 프로젝트는 모바일 기기를 통해서만 진행 가능합니다.</p>
+            <p>모바일 기기를 통해 접속해주십시오</p>
+        </div>
+        `
+        makeHTMLCode();
+        return 0;
+    }
     switch(kind)
     {
         case 'index':
@@ -52,6 +63,3 @@ function chooseHTMLCode(kind){
     }
 }
 
-function makeHTMLCode(){
-    contents.innerHTML = htmlCode;
-}

@@ -4,16 +4,16 @@ function makeHTMLCode(){
     contents.innerHTML = htmlCode;
 }
 function chooseHTMLCode(kind){
-    if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))){
-        htmlCode = `
-        <div class="main">
-            <p>본 프로젝트는 모바일 기기를 통해서만 진행 가능합니다.</p>
-            <p>모바일 기기를 통해 접속해주십시오</p>
-        </div>
-        `
-        makeHTMLCode();
-        return 0;
-    }
+    // if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))){
+    //     htmlCode = `
+    //     <div class="main">
+    //         <p>본 프로젝트는 모바일 기기를 통해서만 진행 가능합니다.</p>
+    //         <p>모바일 기기를 통해 접속해주십시오</p>
+    //     </div>
+    //     `
+    //     makeHTMLCode();
+    //     return 0;
+    // }
     switch(kind)
     {
         case 'index':
@@ -44,7 +44,7 @@ function chooseHTMLCode(kind){
             <div class="main">
                 <div class="quest">
                     <p>16+9=1<br>8+6=2<br>14+13=3<br>7+7=<input placeholder="??" type="text" name = "answer" id="secAn"></p>
-                    <button onclick="answerCheck();">정답 제출!</button>
+                    <button onclick="answerCheckB();">정답 제출!</button>
                 </div>
             </div>
             `;
@@ -56,6 +56,15 @@ function chooseHTMLCode(kind){
                 <p>정답을 입력하세요</p>
                 <input type="text">
                 <input type="submit">
+            </div>
+            `;
+            makeHTMLCode();
+            break;
+        case 'B4729111':
+            htmlCode = `
+            <div class="main">
+                <p>정답입니다!</p>
+                <p>VAVAS 안경점 앞 쓰레기통을 찾아가십시오</p>
             </div>
             `;
             makeHTMLCode();

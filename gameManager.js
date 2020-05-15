@@ -53,9 +53,10 @@ function chooseHTMLCode(kind){
         case 'C7893YCE':
             htmlCode = `
             <div class="main">
-                <p>정답을 입력하세요</p>
-                <input type="text">
-                <input type="submit">
+                <div class="quest">
+                    <p>5+3=28<br>9+1=810<br>8+6=214<br>7+3=<input placeholder="??" type="text" name = "answer" id="secAn"></p>
+                    <button onclick="answerCheckC();">정답 제출!</button>
+                </div>
             </div>
             `;
             makeHTMLCode();
@@ -65,6 +66,15 @@ function chooseHTMLCode(kind){
             <div class="main">
                 <p>정답입니다!</p>
                 <p>VAVAS 안경점 앞 쓰레기통을 찾아가십시오</p>
+            </div>
+            `;
+            makeHTMLCode();
+            break;
+        case 'C782132':
+            htmlCode = `
+            <div class="main">
+                <p>축하합니다!</p>
+                <p>계속 진행하실 의향이 있으십니까?</p>
             </div>
             `;
             makeHTMLCode();
